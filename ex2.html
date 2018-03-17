@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <button id="botaoAdicionar" type='button'>Adicionar</button>
+      <button id="botaoRemover" type='button'>Remover</button>
+      <div id="valor"></div>
+
+      <script>
+        var valor=0;
+        document.getElementById('valor').innerHTML = valor;
+        document.getElementById('botaoAdicionar').addEventListener("click",somarValor);
+        function somarValor(){
+          valor++;
+          document.getElementById('valor').innerHTML = valor;
+        }
+        document.getElementById('valor').innerHTML = valor;
+        document.getElementById('botaoRemover').addEventListener("click",subtrairValor);
+        function subtrairValor(){
+          valor--;
+          document.getElementById('valor').innerHTML = valor;
+        }
+
+      </script>
+  </body>
+</html>
